@@ -1,0 +1,29 @@
+# Nunca publicar o jogo nem o que é gerado dele.
+# ROMs e arquivos compactados com ROMs
+rom/
+*.zip
+*.7z
+*.bin
+*.smd
+*.SMD
+*.gen
+Bare Knuckle*/
+# A base clonada: o código C em generated/ e build/ é traduzido da ROM (código do jogo).
+# Quem baixar o repositório clona a base e gera tudo com a própria ROM.
+referencias/
+# Builds, pasta de console (tem a ROM) e saídas de teste
+port/build/
+port/deploy/
+x360/probe/build/
+*.xex
+*.mp4
+*_log.txt
+port/link_log.txt
+port/build_errs.txt
+# Notas de trabalho e scripts que só servem no meu PC
+AVALIACAO_BASE.md
+port/ESTADO_PORT.md
+port/ORIGEM.txt
+port/**/ORIGEM.txt
+port/tools/run_xenia.ps1
+/x360/

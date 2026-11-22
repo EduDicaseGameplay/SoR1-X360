@@ -1,0 +1,21 @@
+Third-party code and tools
+
+port/runtime/src
+  A modified copy of the runtime of Streets-Of-Rage-Recomp
+  https://github.com/OriginalSwayze/Streets-Of-Rage-Recomp
+  Copyright (c) 2026 OriginalSwayze, MIT License (see LICENSE).
+  Changes for the Xbox 360 are marked "X360" in the code.
+
+Used from the base at build time (not in this repository):
+  Musashi 68000 emulator, Karl Stenerud, see third_party/musashi/readme.txt in the base
+  z80, Copyright (c) 2019 Nicolas Allemand (superzazu), MIT License
+  ymfm, Copyright (c) 2021 Aaron Giles, BSD 3-Clause License
+  SDL2 headers, Copyright (C) 1997-2024 Sam Lantinga, zlib License
+    (only the headers: port/x360/platform implements the part of SDL2 the runtime uses)
+
+OXDK, MrMilenko, public domain
+  https://github.com/MrMilenko/OXDK
+  The compiler, linker and XEX tools. port/tools/patches/llvm-lld-thunk-r0.patch
+  changes LLVM's lld (Apache License 2.0 with LLVM Exceptions).
+
+Xbox 360 SDK (XDK), Microsoft: needed to build, not included.
